@@ -62,6 +62,8 @@ zinit snippet OMZP::colored-man-pages
 #####################
 alias ls="eza --tree --level=2 --icons=always --no-time --no-user --no-permissions --group-directories-first"
 #alias cd="z"
+# Repo alias
+alias dots='git --git-dir=$HOME/.dots.git/ --work-tree=$HOME'
 
 #####################
 # ZSTYLE            #
@@ -78,3 +80,6 @@ zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 
 eval "$(fzf --zsh)"
 eval "$(zellij setup --generate-auto-start zsh)"
+
+#Update dotfiles
+dots pull
