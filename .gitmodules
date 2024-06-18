@@ -1,0 +1,3 @@
+[submodule "/home/sheg/.config/nvim"]
+	path = /home/sheg/.config/nvim
+	url = https://github.com/NvChad/starter
