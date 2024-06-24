@@ -62,8 +62,12 @@ zinit snippet OMZP::colored-man-pages
 #####################
 alias ls="eza --tree --level=2 --icons=always --no-time --no-user --no-permissions --group-directories-first"
 #alias cd="z"
+
 # Repo alias
 alias dots='git --git-dir=$HOME/.dots.git/ --work-tree=$HOME'
+dots config status.showUntrackedFiles no
+dots config alias.untracked "status -u ."
+dots config alias.untracked-at "status -u"
 
 #####################
 # ZSTYLE            #
@@ -71,7 +75,7 @@ alias dots='git --git-dir=$HOME/.dots.git/ --work-tree=$HOME'
 
 zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 zstyle ':completion:*' menu no
-zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color --icons=always $realpath'
+zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
 zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 
 #####################
