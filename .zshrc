@@ -37,6 +37,9 @@ zinit light eza-community/eza
 
 zinit ice as"command" from"gh-r" sbin
 zinit light zellij-org/zellij
+
+zinit ice as"command" from"gh-r" sbin
+zinit light jesseduffield/lazydocker
 #####################
 # Plugins           #
 #####################
@@ -62,6 +65,7 @@ zinit snippet OMZP::colored-man-pages
 #####################
 alias ls="eza --tree --level=2 --icons=always --no-time --no-user --no-permissions --group-directories-first"
 #alias cd="z"
+alias lzd='lazydocker'
 
 # Repo alias
 alias dots='git --git-dir=$HOME/.dots.git/ --work-tree=$HOME'
