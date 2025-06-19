@@ -64,8 +64,9 @@ zinit snippet OMZP::colored-man-pages
 # ALIASES           #
 #####################
 alias ls="eza --tree --level=2 --icons=always --no-time --no-user --no-permissions --group-directories-first"
-#alias cd="z"
+alias cd="z"
 alias lzd='lazydocker'
+alias cat="bat"
 
 # Repo alias
 alias dots='git --git-dir=$HOME/.dots.git/ --work-tree=$HOME'
