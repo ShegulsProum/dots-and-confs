@@ -67,6 +67,8 @@ alias ls="eza --tree --level=2 --icons=always --no-time --no-user --no-permissio
 alias cd="z"
 alias lzd='lazydocker'
 alias cat="bat"
+alias nai="sudo nala install"
+alias nau="sudo nala upgrade"
 
 # Repo alias
 alias dots='git --git-dir=$HOME/.dots.git/ --work-tree=$HOME'
